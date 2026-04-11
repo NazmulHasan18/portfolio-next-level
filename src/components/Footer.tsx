@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, Phone, ArrowUp, Code2, Heart } from "lucide-react";
+import Image from "next/image";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const socials = [
@@ -33,9 +34,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-[#3F72AF] flex items-center justify-center">
-                <Code2 className="w-4 h-4 text-white" />
-              </div>
+              <Image src={"/logoNH.png"} alt="NH Logo" width={32} height={32}></Image>
+
               <span className="font-display text-lg">
                 Nazmul Hasan<span className="text-[#3F72AF]">.</span>
               </span>
