@@ -2,56 +2,67 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Briefcase, GraduationCap, Zap, ShieldCheck, Database } from "lucide-react";
 
 const experiences = [
   {
     id: 1,
     type: "work",
-    role: "Senior UI/UX Designer",
-    company: "Figma Inc.",
-    period: "2022 – Present",
+    role: "Full Stack Developer",
+    company: "SkyGoal Innova Technologies Pvt Ltd - Delhi, India",
+    period: "May 2024 - Present",
     description:
-      "Leading design for enterprise product suite. Established design system adopted by 50+ engineers. Improved user retention by 34% through UX research-driven redesign.",
-    tags: ["Design Systems", "Leadership", "User Research"],
+      "Promoted from Backend Developer after internship. Building full-stack features, integrating APIs, and improving reliability and performance across the product.",
+    tags: ["Next.js", "React", "Node.js", "MongoDB"],
   },
   {
     id: 2,
     type: "work",
-    role: "Interaction Designer",
-    company: "Meta Platforms",
-    period: "2020 – 2022",
+    role: "Backend Developer (4M Intern)",
+    company: "SkyGoal Innova Technologies Pvt Ltd - Delhi, India",
+    period: "Jan 2024 - Apr 2024",
     description:
-      "Designed core interaction patterns for Meta's family of apps. Collaborated with cross-functional teams across 3 time zones to ship features to 2B+ users.",
-    tags: ["Mobile Design", "Cross-platform", "Prototyping"],
+      "Developed and maintained server-side logic, database management, and API integrations to ensure secure and robust backend functionality.",
+    tags: ["REST APIs", "Database", "Authentication"],
   },
   {
     id: 3,
     type: "work",
-    role: "Brand & UI Designer",
-    company: "Freelance",
-    period: "2018 – 2020",
+    role: "Full Stack Developer Intern",
+    company: "Sponskart India - Delhi, India",
+    period: "Aug 2023 - Nov 2023",
     description:
-      "Delivered brand identities and web designs for 40+ clients across Europe and North America. Built long-term relationships with 15 retained clients.",
-    tags: ["Branding", "Web Design", "Client Management"],
+      "Developed and maintained the web platform, collaborated on new features, and resolved issues through testing and performance optimization.",
+    tags: ["Feature Development", "Testing", "Performance"],
   },
   {
     id: 4,
     type: "education",
-    role: "Bachelor of Visual Arts",
-    company: "Vilnius Academy of Arts",
-    period: "2014 – 2018",
+    role: "Bachelor of Science (Mathematics)",
+    company: "National University",
+    period: "Jul 2020 -Jun 2024",
     description:
-      "Focused on graphic design, typography, and digital media. Graduated with distinction. Winner of the national student design competition.",
-    tags: ["Typography", "Graphic Design", "Fine Arts"],
+      "Focused on mathematical foundations, problem-solving, and analytical reasoning with a strong emphasis on applied computing and statistics.",
+    tags: ["Mathematics", "Statistics", "Problem Solving"],
   },
 ];
 
-const awards = [
-  { name: "Awwwards SOTD", year: "2024", icon: "🏆" },
-  { name: "CSS Design Award", year: "2023", icon: "🥇" },
-  { name: "Dribbble Top Shot", year: "2023", icon: "🎯" },
-  { name: "Behance Feature", year: "2022", icon: "⭐" },
+const highlights = [
+  {
+    icon: Zap,
+    title: "Event-driven Architecture",
+    year: "2025",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Secure Payment Integration",
+    year: "2025",
+  },
+  {
+    icon: Database,
+    title: "Optimized Database Design",
+    year: "2024",
+  },
 ];
 
 const fadeUp = {
@@ -165,7 +176,7 @@ export default function Experience() {
             ))}
           </div>
 
-          {/* Awards sidebar */}
+          {/* Experience highlights */}
           <div>
             <motion.div
               custom={2}
@@ -175,15 +186,15 @@ export default function Experience() {
               className="sticky top-24"
             >
               <div className="flex items-center gap-2 mb-5">
-                <Award className="w-4 h-4 text-[#3F72AF] dark:text-[#3F8EFC]" />
+                <Zap className="w-4 h-4 text-[#3F72AF] dark:text-[#3F8EFC]" />
                 <p className="font-body text-xs font-semibold uppercase tracking-widest text-[#112D4E]/40 dark:text-[#9CA3AF]/60">
-                  Awards & Recognition
+                  Experience Highlights
                 </p>
               </div>
               <div className="space-y-3">
-                {awards.map((award, i) => (
+                {highlights.map((highlight, i) => (
                   <motion.div
-                    key={award.name}
+                    key={highlight.title}
                     custom={3 + i}
                     variants={fadeUp}
                     initial="hidden"
@@ -191,12 +202,16 @@ export default function Experience() {
                     whileHover={{ x: 4, scale: 1.02 }}
                     className="flex items-center gap-3 p-4 rounded-2xl bg-[#DBE2EF]/50 dark:bg-[#1F2937] border border-white/60 dark:border-[#374151]/50 hover:border-[#3F72AF]/30 dark:hover:border-[#3F8EFC]/30 transition-all"
                   >
-                    <span className="text-2xl">{award.icon}</span>
+                    <span className="p-2 rounded-xl bg-white/70 dark:bg-[#111827] border border-white/60 dark:border-[#374151]">
+                      <highlight.icon className="w-5 h-5 text-[#3F72AF] dark:text-[#3F8EFC]" />
+                    </span>
                     <div>
                       <p className="font-body text-sm font-semibold text-[#112D4E] dark:text-[#E5E7EB]">
-                        {award.name}
+                        {highlight.title}
                       </p>
-                      <p className="font-mono text-xs text-[#112D4E]/50 dark:text-[#9CA3AF]">{award.year}</p>
+                      <p className="font-mono text-xs text-[#112D4E]/50 dark:text-[#9CA3AF]">
+                        {highlight.year}
+                      </p>
                     </div>
                   </motion.div>
                 ))}
