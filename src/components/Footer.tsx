@@ -1,14 +1,15 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
-import { GitBranch, LampIcon, X, Drill, Inspect, ArrowUp, Code2, Heart } from "lucide-react";
+import { Mail, Phone, ArrowUp, Code2, Heart } from "lucide-react";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const socials = [
-  { icon: GitBranch, href: "https://github.com", label: "GitHub" },
-  { icon: LampIcon, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: X, href: "https://twitter.com", label: "Twitter" },
-  { icon: Drill, href: "https://dribbble.com", label: "Dribbble" },
-  { icon: Inspect, href: "https://instagram.com", label: "Instagram" },
+  { icon: FaGithub, href: "https://github.com/NazmulHasan18", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/nazmul-hasan-shanto-a67041182/", label: "LinkedIn" },
+  { icon: FaFacebook, href: "https://www.facebook.com/smnazmul.hasan.1829", label: "Facebook" },
+  { icon: Mail, href: "mailto:nazmulhasanshanto13@gmail.com", label: "Email" },
+  { icon: Phone, href: "tel:+8801904723512", label: "Phone" },
 ];
 
 const links = [
@@ -36,12 +37,12 @@ export default function Footer() {
                 <Code2 className="w-4 h-4 text-white" />
               </div>
               <span className="font-display text-lg">
-                Solt<span className="text-[#3F72AF]">.</span>
+                Nazmul Hasan<span className="text-[#3F72AF]">.</span>
               </span>
             </div>
             <p className="font-body text-sm text-white/50 max-w-xs leading-relaxed mb-6">
-              Transforming ideas into stunning visuals — UI/UX and brand design that captivates, engages, and
-              delivers results.
+              Fullstack web developer building modern, high-performance web apps with Next.js, React, Node.js,
+              and MongoDB.
             </p>
             <div className="flex gap-2">
               {socials.map(({ icon: Icon, href, label }) => (
@@ -86,12 +87,18 @@ export default function Footer() {
             </p>
             <div className="space-y-2">
               <a
-                href="mailto:hello@solt.design"
+                href="mailto:nazmulhasanshanto13@gmail.com"
                 className="block font-body text-sm text-white/50 hover:text-white transition-all"
               >
-                hello@solt.design
+                nazmulhasanshanto13@gmail.com
               </a>
-              <p className="font-body text-sm text-white/50">Vilnius, Lithuania</p>
+              <p className="font-body text-sm text-white/50">Pabna, Rajshahi, Bangladesh</p>
+              <a
+                href="tel:+8801904723512"
+                className="block font-body text-sm text-white/50 hover:text-white transition-all"
+              >
+                +880 1904-723512
+              </a>
               <div className="pt-2">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-medium">
                   <span className="relative flex h-1.5 w-1.5">
@@ -108,8 +115,8 @@ export default function Footer() {
         {/* Divider + bottom */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-white/30 flex items-center gap-1">
-            © {new Date().getFullYear()} Solt. Made with{" "}
-            <Heart className="w-3 h-3 text-red-400 fill-red-400" /> in Vilnius
+            © {new Date().getFullYear()} Nazmul Hasan. Made with{" "}
+            <Heart className="w-3 h-3 text-red-400 fill-red-400" /> in Bangladesh
           </p>
 
           <motion.button
