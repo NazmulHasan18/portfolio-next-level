@@ -88,6 +88,7 @@ function TimelineItem({ item, index }: { item: (typeof experiences)[0]; index: n
       initial="hidden"
       animate={inView ? "show" : "hidden"}
       className="relative pl-12"
+      id="experience"
     >
       {/* Line */}
       {index < experiences.length - 1 && (

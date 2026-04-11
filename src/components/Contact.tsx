@@ -5,9 +5,14 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 import { Mail, MapPin, Phone, Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "hello@solt.design", href: "mailto:hello@solt.design" },
-  { icon: Phone, label: "Phone", value: "+1 (555) 234-5678", href: "tel:+15552345678" },
-  { icon: MapPin, label: "Location", value: "Vilnius, Lithuania", href: "#" },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "nazmulhasanshanto13@gmail.com",
+    href: "mailto:nazmulhasanshanto13@gmail.com",
+  },
+  { icon: Phone, label: "Phone", value: "+880 1904-723512", href: "tel:+8801904723512" },
+  { icon: MapPin, label: "Location", value: "Pabna, Rajshahi, Bangladesh", href: "#" },
 ];
 
 const fadeUp = {
