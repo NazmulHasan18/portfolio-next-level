@@ -61,6 +61,9 @@ export const metadata: Metadata = {
     description: "Fullstack developer crafting fast, scalable, and modern web apps.",
     creator: "@yourhandle", // optional
   },
+  icons: {
+    icon: "/favicon.png",
+  },
 
   metadataBase: new URL("https://your-domain.com"), // 🔥 replace
 };

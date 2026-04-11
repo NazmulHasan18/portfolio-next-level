@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Sparkles } from "lucide-react";
+import Image from "next/image";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
@@ -13,9 +14,9 @@ const stats = [
 ];
 
 const socials = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FaFacebook, href: "https://facebook.com", label: "Facebook" },
+  { icon: FaGithub, href: "https://github.com/NazmulHasan18", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/nazmul-hasan-shanto-a67041182/", label: "LinkedIn" },
+  { icon: FaFacebook, href: "https://www.facebook.com/smnazmul.hasan.1829", label: "Facebook" },
 ];
 
 const roles = [
@@ -210,7 +211,13 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-linear-to-br from-[#3F72AF]/20 to-[#DBE2EF] dark:from-[#3F8EFC]/10 dark:to-[#1F2937]" />
                 {/* Placeholder initials */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-display text-6xl text-[#3F72AF]/40 dark:text-[#3F8EFC]/30">S</span>
+                  <Image
+                    src={"/personal-img.jpeg"}
+                    alt="Nazmul"
+                    width={250}
+                    height={250}
+                    className="font-display rounded-full text-6xl text-[#3F72AF]/40 dark:text-[#3F8EFC]/30"
+                  ></Image>
                 </div>
               </div>
 
