@@ -113,8 +113,8 @@ const projects = [
     darkColor: "dark:from-blue-500/10 dark:to-[#1F2937]",
     accent: "#3F72AF",
     year: "2025",
-    liveUrl: "https://your-live-link.com",
-    clientUrl: "https://github.com/your-client-repo",
+    liveUrl: "https://medibridge-patient.vercel.app",
+    clientUrl: "https://github.com/NazmulHasan18/medibridge-patient",
     serverUrl: "https://github.com/your-server-repo",
     features: [
       "Dynamic hospital landing page with service listings, doctor profiles, and appointment booking system.",
@@ -138,7 +138,7 @@ const projects = [
     accent: "#8B5CF6",
     year: "2025",
     liveUrl: "https://your-admin-link.com",
-    clientUrl: "https://github.com/your-admin-client",
+    clientUrl: "https://github.com/NazmulHasan18/medibridge-admin",
     serverUrl: "https://github.com/your-server-repo",
     features: [
       "Comprehensive dashboard to manage appointments, doctors, patients, and blog content.",

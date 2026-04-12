@@ -207,15 +207,15 @@ export default function Hero() {
                 className="absolute -inset-8 rounded-full border border-[#DBE2EF] dark:border-[#1F2937]/60"
               />
               {/* Avatar */}
-              <div className="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-[#DBE2EF] dark:border-[#1F2937] shadow-2xl shadow-[#3F72AF]/20 dark:shadow-[#3F8EFC]/10">
+              <div className="relative w-56 h-56 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-[#DBE2EF] dark:border-[#1F2937] shadow-2xl shadow-[#3F72AF]/20 dark:shadow-[#3F8EFC]/10">
                 <div className="absolute inset-0 bg-linear-to-br from-[#3F72AF]/20 to-[#DBE2EF] dark:from-[#3F8EFC]/10 dark:to-[#1F2937]" />
                 {/* Placeholder initials */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Image
-                    src={"/personal-img.jpeg"}
+                    src={"/personal-img.png"}
                     alt="Nazmul"
-                    width={250}
-                    height={250}
+                    width={450}
+                    height={450}
                     className="font-display rounded-full text-6xl text-[#3F72AF]/40 dark:text-[#3F8EFC]/30"
                   ></Image>
                 </div>
