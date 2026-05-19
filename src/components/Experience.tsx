@@ -8,9 +8,9 @@ const experiences = [
   {
     id: 1,
     type: "work",
-    role: "Full Stack Developer",
+    role: "Backend Developer",
     company: "SkyGoal Innova Technologies Pvt Ltd - Delhi, India",
-    period: "May 2024 - Present",
+    period: "May 2024 - April 2026",
     description:
       "Promoted from Backend Developer after internship. Building full-stack features, integrating APIs, and improving reliability and performance across the product.",
     tags: ["Next.js", "React", "Node.js", "MongoDB"],
@@ -18,9 +18,9 @@ const experiences = [
   {
     id: 2,
     type: "work",
-    role: "Backend Developer (4M Intern)",
+    role: "Backend Developer (3M Intern)",
     company: "SkyGoal Innova Technologies Pvt Ltd - Delhi, India",
-    period: "Jan 2024 - Apr 2024",
+    period: "Feb 2024 - Apr 2024",
     description:
       "Developed and maintained server-side logic, database management, and API integrations to ensure secure and robust backend functionality.",
     tags: ["REST APIs", "Database", "Authentication"],
@@ -40,7 +40,7 @@ const experiences = [
     type: "education",
     role: "Bachelor of Science (Mathematics)",
     company: "National University",
-    period: "Jul 2020 -Jun 2024",
+    period: "Jul 2020 -Jun 2024(Ongoing)",
     description:
       "Focused on mathematical foundations, problem-solving, and analytical reasoning with a strong emphasis on applied computing and statistics.",
     tags: ["Mathematics", "Statistics", "Problem Solving"],
